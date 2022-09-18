@@ -181,7 +181,7 @@ blogs.forEach(function (blog) {
     minimize: true, // 是否要压缩
     minimizer: [new TerserPlugin()], // 要使用什么工具压缩
   },
-打开dist.js可以看到代码被压缩了,空白去掉了,变量使用了简化的形式,后边还加了一大坨加密字符.
+打开dist.js可以看到代码被压缩了,空白去掉了,变量简化的形式,后边还加了一大坨加密字符.
 
 ### 开发时,每次改动js之后都要重新打包,webpack提供了一个dev server开发服务器,在其启动之后,若果我们修改了js代码,他就会自动重新打包,并刷新页面.
 首先安装他:
@@ -248,3 +248,5 @@ output: {
 const BundleAnalyzerPlugin = require("webpack-bundle-analyzer").BundleAnalyzerPlugin;
 他会在我们运行npx webpack时自动打开
 可以看到index.js体积最大.
+
+test
