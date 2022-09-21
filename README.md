@@ -248,5 +248,3 @@ output: {
 const BundleAnalyzerPlugin = require("webpack-bundle-analyzer").BundleAnalyzerPlugin;
 他会在我们运行npx webpack时自动打开
 可以看到index.js体积最大.
-
-test
